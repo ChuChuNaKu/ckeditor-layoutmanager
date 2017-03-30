@@ -1,0 +1,14 @@
+{
+    "name": "chuchunaku/ckeditor-layoutmanager",
+    "type": "drupal-library",
+    "description": "A plugin for ckeditor",
+    "require": {
+        "chuchunaku/ckeditor-basewidget": "dev-master"
+    },
+    "version": "1.0",
+    "dist": {
+      "url": "https://github.com/radpet/ckeditor-layoutmanager.git",
+      "reference": "master",
+      "type": "git"
+    }
+}
