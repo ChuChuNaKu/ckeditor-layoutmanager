@@ -1,14 +1,33 @@
 {
-    "name": "chuchunaku/ckeditor-layoutmanager",
-    "type": "drupal-library",
-    "description": "A plugin for ckeditor",
-    "require": {
-        "chuchunaku/ckeditor-basewidget": "dev-master"
-    },
-    "version": "1.0",
-    "dist": {
-      "url": "https://github.com/radpet/ckeditor-layoutmanager.git",
-      "reference": "master",
-      "type": "git"
+  "name": "chuchunaku/ckeditor-layoutmanager",
+  "type": "drupal-library",
+  "description": "A plugin for ckeditor",
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": {
+    "radpet/ckeditor-layoutmanager": "dev-master",
+    "composer/installers": "^1.0.20"
+  },
+  "scripts": {
+    "pre-update-cmd": [
+      "ln -s vendor/radpet/ckeditor-layoutmanager/plugin.js plugin.js",
+      "ln -s vendor/radpet/ckeditor-layoutmanager/css css",
+      "ln -s vendor/radpet/ckeditor-layoutmanager/icons icons",
+      "ln -s vendor/radpet/ckeditor-layoutmanager/lang lang"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "radpet/ckeditor-layoutmanager",
+        "version": "dev-master",
+        "source": {
+          "url": "https://github.com/radpet/ckeditor-layoutmanager.git",
+          "type": "git",
+          "reference": "749256a32e87d9128b851415da70f0c6e783237d"
+        }
+      }
     }
+  ]
 }
